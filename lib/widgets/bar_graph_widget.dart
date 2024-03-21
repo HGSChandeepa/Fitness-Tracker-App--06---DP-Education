@@ -2,6 +2,7 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive/data/bar_graph_data.dart';
 import 'package:responsive/models/graph_model.dart';
+import 'package:responsive/utils/responsive.dart';
 import 'package:responsive/widgets/custum_card.dart';
 
 class BarGraphCard extends StatelessWidget {
@@ -15,8 +16,8 @@ class BarGraphCard extends StatelessWidget {
       itemCount: barGraphData.data.length,
       shrinkWrap: true,
       physics: const ScrollPhysics(),
-      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 3,
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: Responsive.isMobile(context) ? 2 : 3,
         crossAxisSpacing: 15,
         mainAxisSpacing: 12.0,
         childAspectRatio: 5 / 4,

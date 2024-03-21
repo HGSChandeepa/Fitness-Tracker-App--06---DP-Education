@@ -3,7 +3,7 @@ import 'package:responsive/constants/colors.dart';
 import 'package:responsive/pages/home_page.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
