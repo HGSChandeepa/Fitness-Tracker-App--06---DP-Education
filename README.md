@@ -21,7 +21,7 @@ A Flutter project that helps you track your expenses and incomes effortlessly. T
 2. **Navigate to the project directory**:
 
    ```bash
-   cd expenz
+   cd Fitness-Tracker-App--06---DP-Education
    ```
 
 3. **Install dependencies**:
