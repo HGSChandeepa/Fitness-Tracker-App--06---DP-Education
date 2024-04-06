@@ -2,7 +2,7 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive/constants/colors.dart';
 
-class ChartData {
+class PieChartSampleData {
   final paiChartSelectionDatas = [
     PieChartSectionData(
       color: primaryColor,
@@ -23,7 +23,7 @@ class ChartData {
       radius: 19,
     ),
     PieChartSectionData(
-      color: const Color(0xFFEE2727),
+      color: Color.fromARGB(255, 39, 238, 145),
       value: 15,
       showTitle: false,
       radius: 16,

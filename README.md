@@ -1,16 +1,45 @@
-# responsive
+![DP Education IT Campus](https://dpeducation.lk/en/assets/images/brands/en/it-campus.png)
 
-A new Flutter project.
+# Fitness Tracker - Application 06 ⚡️
+
+A Flutter project that helps you track your expenses and incomes effortlessly. This project is part of the Flutter Development Program by DP Education IT Campus.
+
+## Features
+
+- **Flutter Web**: Responsive design for web, ensuring a seamless user experience across devices.
+- **Responsive**: Adapts to different screen sizes for optimal performance.
+- **Dark Mode**: A sleek and stylish dark mode option for users who prefer it.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+1. **Clone the repository**:
 
-A few resources to get you started if this is your first Flutter project:
+   ```bash
+   git clone https://github.com/HGSChandeepa/Fitness-Tracker-App--06---DP-Education
+   ```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+2. **Navigate to the project directory**:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+   ```bash
+   cd expenz
+   ```
+
+3. **Install dependencies**:
+
+   ```bash
+   flutter pub get
+   ```
+
+4. **Run the app**:
+
+   ```bash
+   flutter run
+   ```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## What you will create
+
+![Finished App](https://github.com/HGSChandeepa/Fitness-Tracker-App--06---DP-Education/blob/main/assets/images/app.png)

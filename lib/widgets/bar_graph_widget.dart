@@ -1,5 +1,6 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
+import 'package:responsive/constants/colors.dart';
 import 'package:responsive/data/bar_graph_data.dart';
 import 'package:responsive/models/graph_model.dart';
 import 'package:responsive/utils/responsive.dart';
@@ -47,7 +48,7 @@ class BarGraphCard extends StatelessWidget {
                       color: barGraphData.data[index].color,
                     ),
                     borderData: FlBorderData(border: const Border()),
-                    gridData: const FlGridData(show: false),
+                    // gridData: const FlGridData(show: false),
                     titlesData: FlTitlesData(
                       bottomTitles: AxisTitles(
                         sideTitles: SideTitles(
@@ -58,9 +59,10 @@ class BarGraphCard extends StatelessWidget {
                               child: Text(
                                 barGraphData.label[value.toInt()],
                                 style: const TextStyle(
-                                    fontSize: 11,
-                                    color: Colors.grey,
-                                    fontWeight: FontWeight.w500),
+                                  fontSize: 11,
+                                  color: greyColor,
+                                  fontWeight: FontWeight.w500,
+                                ),
                               ),
                             );
                           },
@@ -89,7 +91,10 @@ class BarGraphCard extends StatelessWidget {
   List<BarChartGroupData> _chartGroups(
       {required List<GraphModel> points, required Color color}) {
     return points
-        .map((point) => BarChartGroupData(x: point.x.toInt(), barRods: [
+        .map(
+          (point) => BarChartGroupData(
+            x: point.x.toInt(),
+            barRods: [
               BarChartRodData(
                 toY: point.y,
                 width: 12,
@@ -99,7 +104,9 @@ class BarGraphCard extends StatelessWidget {
                   topRight: Radius.circular(3.0),
                 ),
               )
-            ]))
+            ],
+          ),
+        )
         .toList();
   }
 }

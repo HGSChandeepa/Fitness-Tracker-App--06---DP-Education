@@ -16,7 +16,6 @@ class MyApp extends StatelessWidget {
       title: "Responsive Apps",
       theme: ThemeData(
         scaffoldBackgroundColor: backgroundColor,
-        brightness: Brightness.light,
       ),
       home: const HomePage(),
     );

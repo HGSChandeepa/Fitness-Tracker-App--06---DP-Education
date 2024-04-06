@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive/constants/colors.dart';
 import 'package:responsive/widgets/custum_card.dart';
 
 class SummaryDetails extends StatelessWidget {
@@ -7,7 +8,7 @@ class SummaryDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomCard(
-      color: const Color(0xFF2F353E),
+      color: limeColor,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -27,13 +28,13 @@ class SummaryDetails extends StatelessWidget {
           key,
           style: const TextStyle(
             fontSize: 11,
-            color: Colors.white,
+            color: whiteColor,
           ),
         ),
         const SizedBox(height: 2),
         Text(
           value,
-          style: const TextStyle(fontSize: 14, color: Colors.grey),
+          style: const TextStyle(fontSize: 14, color: greyColor),
         ),
       ],
     );

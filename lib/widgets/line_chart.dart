@@ -20,7 +20,7 @@ class LineChartCard extends StatelessWidget {
             style: TextStyle(
               fontSize: 14,
               fontWeight: FontWeight.w500,
-              color: Colors.grey,
+              color: greyColor,
             ),
           ),
           const SizedBox(height: 20),
@@ -31,7 +31,7 @@ class LineChartCard extends StatelessWidget {
                 lineTouchData: const LineTouchData(
                   handleBuiltInTouches: true,
                 ),
-                gridData: const FlGridData(show: false),
+                // gridData: const FlGridData(show: false),
                 titlesData: FlTitlesData(
                   rightTitles: const AxisTitles(
                     sideTitles: SideTitles(showTitles: false),
@@ -47,9 +47,12 @@ class LineChartCard extends StatelessWidget {
                             ? SideTitleWidget(
                                 axisSide: meta.axisSide,
                                 child: Text(
-                                    data.bottomTitle[value.toInt()].toString(),
-                                    style: TextStyle(
-                                        fontSize: 12, color: Colors.grey[400])),
+                                  data.bottomTitle[value.toInt()].toString(),
+                                  style: const TextStyle(
+                                    fontSize: 12,
+                                    color: greyColor,
+                                  ),
+                                ),
                               )
                             : const SizedBox();
                       },
@@ -57,16 +60,20 @@ class LineChartCard extends StatelessWidget {
                   ),
                   leftTitles: AxisTitles(
                     sideTitles: SideTitles(
-                      getTitlesWidget: (double value, TitleMeta meta) {
-                        return data.leftTitle[value.toInt()] != null
-                            ? Text(data.leftTitle[value.toInt()].toString(),
-                                style: TextStyle(
-                                    fontSize: 12, color: Colors.grey[400]))
-                            : const SizedBox();
-                      },
                       showTitles: true,
                       interval: 1,
                       reservedSize: 40,
+                      getTitlesWidget: (double value, TitleMeta meta) {
+                        return data.leftTitle[value.toInt()] != null
+                            ? Text(
+                                data.leftTitle[value.toInt()].toString(),
+                                style: const TextStyle(
+                                  fontSize: 12,
+                                  color: greyColor,
+                                ),
+                              )
+                            : const SizedBox();
+                      },
                     ),
                   ),
                 ),

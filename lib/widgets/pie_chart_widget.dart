@@ -8,7 +8,7 @@ class Chart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final pieChartData = ChartData();
+    final pieChartData = PieChartData();
 
     return SizedBox(
       height: 200,
@@ -19,7 +19,7 @@ class Chart extends StatelessWidget {
               sectionsSpace: 0,
               centerSpaceRadius: 70,
               startDegreeOffset: -90,
-              sections: pieChartData.paiChartSelectionDatas,
+              sections: PieChartSampleData().paiChartSelectionDatas,
             ),
           ),
           Positioned.fill(
@@ -35,8 +35,14 @@ class Chart extends StatelessWidget {
                         height: 0.5,
                       ),
                 ),
-                const SizedBox(height: 8),
-                const Text("of 100%")
+                const SizedBox(height: 15),
+                Text(
+                  "of 100%",
+                  style: Theme.of(context).textTheme.titleSmall!.copyWith(
+                        color: Colors.white.withOpacity(0.5),
+                        fontWeight: FontWeight.w300,
+                      ),
+                ),
               ],
             ),
           ),

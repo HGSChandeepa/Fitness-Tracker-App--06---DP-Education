@@ -76,9 +76,12 @@ class HeaderWidget extends StatelessWidget {
                 },
                 child: CircleAvatar(
                   backgroundColor: Colors.transparent,
-                  child: Image.asset(
-                    "assets/images/avatar.png",
-                    width: 32,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(100),
+                    child: Image.asset(
+                      "assets/images/avatar.jpg",
+                      width: 40,
+                    ),
                   ),
                 ),
               ),
