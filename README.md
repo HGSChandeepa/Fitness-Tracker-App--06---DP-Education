@@ -2,11 +2,11 @@
 
 # Fitness Tracker - Application 06 ⚡️
 
-A Flutter project that helps you track your expenses and incomes effortlessly. This project is part of the Flutter Development Program by DP Education IT Campus.
+A Flutter project that helps you track your Fitness effortlessly. This project is part of the Flutter Development Program by DP Education IT Campus. And focused deeply on responsive design.
 
 ## Features
 
-- **Flutter Web**: Responsive design for web, ensuring a seamless user experience across devices.
+- **Flutter Web**: Responsive web design, ensuring a seamless user experience across devices.
 - **Responsive**: Adapts to different screen sizes for optimal performance.
 - **Dark Mode**: A sleek and stylish dark mode option for users who prefer it.
 
