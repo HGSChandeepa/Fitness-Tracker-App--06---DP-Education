@@ -47,6 +47,5 @@ class BarGraphData {
     ),
   ];
 
-  // Update the labels accordingly
   final label = ['M', 'T', 'W', 'T', 'F', 'S'];
 }
